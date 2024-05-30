@@ -16,14 +16,21 @@
 </div>
 
 <div id="logo">Gray Ranks</div>
-<div id="podlogo">OpenStreetMap search</div>
+<div id="podlogo">Archive search</div>
 
 <div id="search">
-	<form action="https://pl.mapy.cz/zakladni" method="get">
-		City, river or another place: <input type="text" name="q">
-		<input type="submit" value="Szukaj">
-	</form>
+Archive web: <input type="text" id="mojepytanie" placeholder="nysa.eu"> <button onclick="fun()">Szukaj w archiwach</button>
 </div>
+
+
+<script>
+function fun(){
+	let adres = "https://archive.ph/";
+	let zapytanie = document.getElementById("mojepytanie").value;
+	let fraza = adres + zapytanie;
+	window.open(fraza);
+}
+</script>
 
 <div id="bot">Made in Europe | <a href="https://github.com/benyowsky/grayranks">GitHub, Open Source</a></div>
 
