@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+body {font-size:18px;font-family:Play;margin:auto;}
+hr {border:0; height: 3px; background: linear-gradient(to right, #71c837,#0044aa);}
+pre {font-size:13px; background:#333333; color:#efefef; padding:3px;}
+p {margin:0px; padding:3px;}
+
+a:link {color:#333333;}
+a:visited {color:#333333;text-decoration:none;}
+a:active {color:#333333;text-decoration:none;}
+a:hover {color:#c60000;text-decoration:none;}
+
+#top {clear:both; margin:0; padding:10px; background:#E5E5E5; color:#7F7F7F; border-bottom:1px solid #7F7F7F;}
+#top a:link {padding:10px;}
+#top a:visited {background:#efefef; padding:10px;}
+#top a:active {background:#efefef; padding:10px;}
+#top a:hover {background:#efefef; padding:10px;}
+#logo {clear:both; font-size:42px; text-align:center; margin-top:100px;}
+#podlogo {clear:both; font-size:14px; text-align:center; margin-top:5px;}
+#search {clear:both; text-align:center; margin-top:50px;}
+#bot {clear:both; text-align:center; margin-top:50px; font-size:12px;}
+
+.newline {clear:both;}
+
+/* media */
+
+@media only screen and (max-width:768px){
+#top a:link {padding:3px;}
+#logo {clear:both; font-size:42px; text-align:center; margin-top:20px;}
+#search {clear:both; text-align:center; margin-top:10px;}
+}

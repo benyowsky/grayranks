@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GrayRanks</title>
+	<link rel="stylesheet" type="text/css" href="grayranks.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id="top">
+	<a href="index.html">Start</a>
+	<a href="cache.html">Cache</a>
+	<a href="mapa.html">Mapa</a>
+</div>
+
+<div id="logo">Gray Ranks</div>
+<div id="podlogo">Cache search</div>
+
+<div id="search">
+Website: <input type="text" id="mojepytanie" placeholder="nysa.eu"> <button onclick="fun()">Szukaj w archiwum google</button>
+</div>
+
+
+<script>
+function fun(){
+	let adres = "http://webcache.googleusercontent.com/search?q=cache:";
+	let zapytanie = document.getElementById("mojepytanie").value;
+	let fraza = adres + zapytanie;
+	window.open(fraza);
+}
+</script>
+
+<div id="bot">Made in Europe | <a href="https://tedium.co/2024/05/17/google-web-search-make-default/">What is udm14</a> | Open Source</div>
+
+</body>
+</html>
